@@ -1,36 +1,43 @@
 {
-  "providers": {
-    "awscloudformation": {
-      "AuthRoleName": "amplify-imageprocessingapp-dev-202546-authRole",
-      "UnauthRoleArn": "arn:aws:iam::123032053400:role/amplify-imageprocessingapp-dev-202546-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::123032053400:role/amplify-imageprocessingapp-dev-202546-authRole",
-      "Region": "us-east-2",
-      "DeploymentBucketName": "amplify-imageprocessingapp-dev-202546-deployment",
-      "UnauthRoleName": "amplify-imageprocessingapp-dev-202546-unauthRole",
-      "StackName": "amplify-imageprocessingapp-dev-202546",
-      "StackId": "arn:aws:cloudformation:us-east-2:123032053400:stack/amplify-imageprocessingapp-dev-202546/b7be6860-f82c-11ea-b0b9-0a7cd1635ec6",
-      "AmplifyAppId": "d3flvqxifhjppk"
+    "providers": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-imageprocessingapp-dev-202546-authRole",
+            "UnauthRoleArn": "arn:aws:iam::123032053400:role/amplify-imageprocessingapp-dev-202546-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::123032053400:role/amplify-imageprocessingapp-dev-202546-authRole",
+            "Region": "us-east-2",
+            "DeploymentBucketName": "amplify-imageprocessingapp-dev-202546-deployment",
+            "UnauthRoleName": "amplify-imageprocessingapp-dev-202546-unauthRole",
+            "StackName": "amplify-imageprocessingapp-dev-202546",
+            "StackId": "arn:aws:cloudformation:us-east-2:123032053400:stack/amplify-imageprocessingapp-dev-202546/b7be6860-f82c-11ea-b0b9-0a7cd1635ec6",
+            "AmplifyAppId": "d3flvqxifhjppk"
+        }
+    },
+    "auth": {
+        "imageprocessingapp": {
+            "service": "Cognito",
+            "providerPlugin": "awscloudformation",
+            "dependsOn": [],
+            "customAuth": false,
+            "providerMetadata": {
+                "s3TemplateURL": "https://s3.amazonaws.com/amplify-imageprocessingapp-dev-202546-deployment/amplify-cfn-templates/auth/imageprocessingapp-cloudformation-template.yml",
+                "logicalId": "authimageprocessingapp"
+            },
+            "lastPushTimeStamp": "2020-09-16T15:05:31.190Z",
+            "output": {
+                "AppClientSecret": "1p2tu4t7sts957gkhf7h60povspa15d614c6hl9jdu8sj438a6sj",
+                "UserPoolId": "us-east-2_OAkSRUyht",
+                "AppClientIDWeb": "5sp8spr63iv5kdf8p515kpaepf",
+                "AppClientID": "1l2l2jj0n0ld0fm1a6jg8pd2og",
+                "UserPoolName": "imageprocessingapp"
+            },
+            "lastPushDirHash": "iaHli8PyXOmX1D+4gceg+grBIV8="
+        }
+    },
+    "hosting": {
+        "amplifyhosting": {
+            "service": "amplifyhosting",
+            "type": "cicd",
+            "lastPushTimeStamp": "2020-09-18T17:32:16.538Z"
+        }
     }
-  },
-  "auth": {
-    "imageprocessingapp": {
-      "service": "Cognito",
-      "providerPlugin": "awscloudformation",
-      "dependsOn": [],
-      "customAuth": false,
-      "providerMetadata": {
-        "s3TemplateURL": "https://s3.amazonaws.com/amplify-imageprocessingapp-dev-202546-deployment/amplify-cfn-templates/auth/imageprocessingapp-cloudformation-template.yml",
-        "logicalId": "authimageprocessingapp"
-      },
-      "lastPushTimeStamp": "2020-09-16T15:05:31.190Z",
-      "output": {
-        "AppClientSecret": "1p2tu4t7sts957gkhf7h60povspa15d614c6hl9jdu8sj438a6sj",
-        "UserPoolId": "us-east-2_OAkSRUyht",
-        "AppClientIDWeb": "5sp8spr63iv5kdf8p515kpaepf",
-        "AppClientID": "1l2l2jj0n0ld0fm1a6jg8pd2og",
-        "UserPoolName": "imageprocessingapp"
-      },
-      "lastPushDirHash": "iaHli8PyXOmX1D+4gceg+grBIV8="
-    }
-  }
 }

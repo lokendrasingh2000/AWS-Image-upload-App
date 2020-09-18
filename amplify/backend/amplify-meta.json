@@ -18,11 +18,6 @@
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
       "customAuth": false,
-      "providerMetadata": {
-        "s3TemplateURL": "https://s3.amazonaws.com/amplify-imageprocessingapp-dev-202546-deployment/amplify-cfn-templates/auth/imageprocessingapp-cloudformation-template.yml",
-        "logicalId": "authimageprocessingapp"
-      },
-      "lastPushTimeStamp": "2020-09-16T15:05:31.190Z",
       "output": {
         "AppClientSecret": "1p2tu4t7sts957gkhf7h60povspa15d614c6hl9jdu8sj438a6sj",
         "UserPoolId": "us-east-2_OAkSRUyht",
@@ -30,7 +25,18 @@
         "AppClientID": "1l2l2jj0n0ld0fm1a6jg8pd2og",
         "UserPoolName": "imageprocessingapp"
       },
-      "lastPushDirHash": "iaHli8PyXOmX1D+4gceg+grBIV8="
+      "lastPushTimeStamp": "2020-09-18T17:27:20.896Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-imageprocessingapp-dev-202546-deployment/amplify-cfn-templates/auth/imageprocessingapp-cloudformation-template.yml",
+        "logicalId": "authimageprocessingapp"
+      }
+    }
+  },
+  "hosting": {
+    "amplifyhosting": {
+      "service": "amplifyhosting",
+      "type": "cicd",
+      "lastPushTimeStamp": "2020-09-18T17:32:16.538Z"
     }
   }
 }
